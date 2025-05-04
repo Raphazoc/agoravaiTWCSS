@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import{ Layout } from './assets/layout/Layout';
 
+
+
 const rotas = createBrowserRouter([
   {
     path: "/",

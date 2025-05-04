@@ -1,0 +1,49 @@
+/* src/styles/global.css */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* Tailwind: bg-gray-50 */
+    color: #111827; /* Tailwind: text-gray-900 */
+    scroll-behavior: smooth;
+  }
+  
+  /* Scrollbar estilizada (opcional) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #9ca3af; /* Tailwind: gray-400 */
+    border-radius: 4px;
+  }
+  
+  /* Variáveis para responsividade ou temas */
+  :root {
+    --header-height: 4rem;
+    --max-content-width: 1200px;
+  }
+  
+  /* Exemplo de media query custom */
+  @media (max-width: 768px) {
+    :root {
+      --header-height: 3.5rem;
+    }
+  }
+  
+  /* Classe utilitária extra */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
